@@ -33,4 +33,8 @@ public class HelloController {
     @GetMapping("/goodbye")
     public String goodbye(){return "Goodbye from Springboot!";}
 
+    @GetMapping("/Today status")
+    public String TodayStatus(){return "Today is -" +LocalDate.now().toString();}
+
+
 }
